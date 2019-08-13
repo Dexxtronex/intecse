@@ -15,6 +15,7 @@ p {
 
 a {
   color: #ffffff;
+  margin-right: 20px;
 }
 
 a:hover {
@@ -94,13 +95,13 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #00B4DB;
+  border-color: #00B4DB;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #00B4DB !important;
+  border-color: #00B4DB !important;
   color: white;
 }
 
@@ -110,10 +111,10 @@ img::-moz-selection {
 }
 
 #mainNav {
-   background: #06beb6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- /* fallback for old browsers */
+  background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #48b1bf, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #48b1bf, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
 
 #mainNav .navbar-toggler {
@@ -165,8 +166,8 @@ background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, F
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
