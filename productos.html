@@ -123,7 +123,7 @@
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" v-if="boton.tipo=='par'" @click="ocultar(boton.nombre)"
             href="#contenedor">{{boton.nombre}}</a>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="background-color:rgb(95, 219, 247);"  @click="ocultar(boton.nombre)"
-            v-if="boton.tipo=='impar'" href="#services">{{boton.nombre}}</a>
+            v-if="boton.tipo=='impar'" href="#contenedor">{{boton.nombre}}</a>
         </div>
     
       <div class="container" v-for="boton of botones" v-if="boton.estado" id="hide">
