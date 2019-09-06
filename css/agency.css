@@ -98,7 +98,13 @@ img::-moz-selection {
   background-color: #00B4DB;
   border-color: #00B4DB;
 }
-
+.lista .btn-primary{
+  width: 100% !important;
+}
+.impar a{
+  background-color: rgb(95, 219, 247);
+  border-color: #00B4DB;
+}
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #00B4DB !important;
   border-color: #00B4DB !important;

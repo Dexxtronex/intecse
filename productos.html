@@ -5,11 +5,14 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Intecse, Instalaciones Tecnologicas... Empresa que se dedica a la venta e instalaciones de cámaras de seguridad y aparatos tecnologícos.">
+  <meta name="description"
+    content="Intecse, Instalaciones Tecnologicas... Empresa que se dedica a la venta e instalaciones de cámaras de seguridad y aparatos tecnologícos.">
   <meta name="author" content="Michael Pérez Pin">
   <meta name="keywords" content="Instaciones Cámaras Seguridad, instalaciones de chapas electricas, instalacion, Anuncio de Motos, Venta de Motods, venta de tecnologia, venta de cámaras
   , venta de pistolas de juguete">
-
+  <meta name="google" content="notranslate" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="vue.js"></script>
 
   <title>Intecse</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -29,6 +32,7 @@
   <link href="css/agency.css" rel="stylesheet">
 
 </head>
+
 
 <body id="page-top">
 
@@ -57,6 +61,19 @@
             <a class="nav-link js-scroll-trigger" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#services">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Portalofio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">Nosotros</a>
+          </li>
+          <!--
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#escalera">Escaleras</a>
           </li>
           <li class="nav-item">
@@ -68,7 +85,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#mono-patin">Mono Patin</a>
           </li>
-        
+          -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="index.html#contact">Contactos</a>
           </li>
@@ -88,398 +105,58 @@
           </a>
         </div>
         <div class="intro-heading text-uppercase">Conoce Nuestros Productos</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#escalera">Productos</a>
-      </div>
+       <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#escalera">Productos</a>
+      --></div>
     </div>
   </header>
 
   <!-- Services -->
+  <!--OPCIONES-->
+  <section class="page-section">
+    <div class="container">
+
+      <div class="row" id="botones">
+        <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
+          <h2 class="section-heading text-uppercase">Opciones</h2>
+        </div>
+        <div class="col-lg-12 text-center lista" v-for="boton of botones"  style="margin-bottom: 10px; " >
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" v-if="boton.tipo=='par'" @click="ocultar(boton.nombre)"
+            href="#contenedor">{{boton.nombre}}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="background-color:rgb(95, 219, 247);"  @click="ocultar(boton.nombre)"
+            v-if="boton.tipo=='impar'" href="#services">{{boton.nombre}}</a>
+        </div>
+    
+      <div class="container" v-for="boton of botones" v-if="boton.estado" id="hide">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase"> {{boton.nombre}}</h2>
+            <h3 class="section-subheading text-muted"> </h3>
+          </div>
+  
+        </div>
+        <div class="row" >
+          <div class="col-md-4 col-sm-6 portfolio-item" v-for="cont of contenido" v-if="boton.nombre === cont.tipo" id="contenedor">
+              <img class="img-fluid"  :src="cont.url" alt="cont.nombre">
+            <div class="portfolio-caption">
+              <h4>{{cont.descripcion}}</h4>
+              <!--<p class="text-muted">Illustration</p>-->
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <!--FIN DE OPCIONES-->
+
 
   <!-- Escaleras -->
-  <section class="bg-light page-section" id="escalera">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Productos Escaleras</h2>
-          <h3 class="section-subheading text-muted"> </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/escalera-01.jpg" alt="escalera">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escalera 4 peldaños</h4>
-            <!--<p class="text-muted">Illustration</p>-->
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/escalera-02.jpg" alt="escalera">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escalera 5 peldaños </h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/escalera-03.jpg" alt="escalera">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escalera 3 peldaños</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/escalera-04.jpg" alt="escalera">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escalera </h4>
-          </div>
-        </div>
-       
-        
-      </div>
-    </div>
-  </section>
-  <!--NERF-->
-  <section class="bg-light page-section" id="nerf">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Productos Nerf</h2>
-          <h3 class="section-subheading text-muted"> </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-01.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf</h4>
-            <!--<p class="text-muted">Illustration</p>-->
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-02.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf </h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-08.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-04.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-05.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf</h4>
-          </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/nerf1-06.jpg" alt="Nerf">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Nerf</h4>
-          </div>
-        </div>
-       
-       
-       
-      </div>
-    </div>
-  </section>
-  <!--Productos Moto-->
-  <section class="bg-light page-section" id="motos">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Productos Motos</h2>
-          <h3 class="section-subheading text-muted"> </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-01.jpg" alt="Escuadron">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escuadron</h4>
-            <!--<p class="text-muted">Illustration</p>-->
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-13.jpg" alt="Escuadron">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escuadron</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-12.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-02.jpg" alt="Escuadron">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escuadron</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-11.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-10.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-09.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-08.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-07.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-06.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-05.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-04.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/productos/about/moto-03.jpg" alt="moto">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Moto</h4>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-<!--MonoPatin-->
-<!--NERF-->
-<section class="bg-light page-section" id="mono-patin">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Productos MonoPatin</h2>
-        <h3 class="section-subheading text-muted"> </h3>
-      </div>
-    </div>
-    
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fas fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="img/productos/about/mono-patin-02.jpg" alt="monopatin">
-        </a>
-        <div class="portfolio-caption">
-          <h4>MonoPatin </h4>
-        </div>
-      </div>
-    
-     
-     
-    </div>
-  </div>
-</section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; <a href="http://intecse.com"
-              style="color:#c82f38;">Intecse S.A</a> </span>
+          <span class="copyright">Copyright &copy; <a href="http://intecse.com" style="color:#c82f38;">Intecse S.A</a>
+          </span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
