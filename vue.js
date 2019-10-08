@@ -34,10 +34,10 @@
                                 nombre:'TUBULAR',
                                 url:'img/productos/ESCALERAS/escalera_tubular.jpg',
                                 productos:[
-                                    {descripcion:"2.60M",url:'img/productos/about/moto-04.jpg'},
-                                    {descripcion:"4.10M",url:'img/productos/about/moto-04.jpg'},
-                                    {descripcion:"5.0M",url:'img/productos/about/moto-04.jpg'},
-                                    {descripcion:"TIJERA",url:'img/productos/about/moto-04.jpg'}
+                                    {descripcion:"2.60M",url:'img/productos/ESCALERAS/TUBULAR/26m.jpg'},
+                                    {descripcion:"4.10M",url:'img/productos/ESCALERAS/TUBULAR/4m.jpg'},
+                                    {descripcion:"5.0M",url:'img/productos/ESCALERAS/TUBULAR/5m.jpg'},
+                                    {descripcion:"TIJERA",url:'img/productos/ESCALERAS/TUBULAR/tijera.jpg'}
                                 ]
                             },
                         },
@@ -106,18 +106,25 @@
             soportes:{
                 nombre:"SOPORTES",
                 tipos:{
-                    tv:{
+                    movil:{
                         nombre:"TV",
-                        url:'img/productos/cables/HDMI/30m.jpg',
+                        url:'img/productos/soportes/soporte-vesa.jpg',
                         productos:[
-                            {descripcion:"1M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"2M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"3M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"5M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"10M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"15M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"20M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"30M",url:'img/productos/about/moto-04.jpg'}
+                            {descripcion:"Soporte con ruedas",url:'img/productos/soportes/soporte-vesa.jpg'},
+                        ]
+                    },
+                    brazo:{
+                        nombre:"TV",
+                        url:'img/productos/soportes/brazo.jpg',
+                        productos:[
+                            {descripcion:"Soporte con brazo",url:'img/productos/soportes/brazo.jpg'},
+                        ]
+                    },
+                    estatico:{
+                        nombre:"TV",
+                        url:'img/productos/soportes/estatico.jpg',
+                        productos:[
+                            {descripcion:"Soporte estatico",url:'img/productos/soportes/estatico.jpg'},
                         ]
                     }
                 },
@@ -126,20 +133,39 @@
                 
             },
             monopatin:{
-                nombre:"MONOPATIN",
+                nombre:"MOTOS",
                 tipos:{
+                    monopatin:{
+                        nombre:"MONOPATIN",
+                        url:'img/productos/MOTOS/monopatin.jpg',
+                        productos:[
+                            {descripcion:"Monopatin 1",url:'img/productos/motos/monopatin/1.jpg'},
+                            {descripcion:"Monopatin 2",url:'img/productos/motos/monopatin/2.jpg'}
+                        ]
+                    },
                     escuadron:{
                         nombre:"ESCUADRON",
-                        url:'img/productos/ESCALERAS/escalera_retractil.jpg',
+                        url:'img/productos/MOTOS/escuadron.jpg',
                         productos:[
-                            {descripcion:"1M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"2M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"3M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"5M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"10M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"15M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"20M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"30M",url:'img/productos/about/moto-04.jpg'}
+                            {descripcion:"Escuadron 1",url:'img/productos/motos/escuadron/1.jpg'},
+                            {descripcion:"Escuadron 2",url:'img/productos/motos/escuadron/2.jpg'},
+                            {descripcion:"Escuadron 3",url:'img/productos/motos/escuadron/3.jpg'}
+                        ]
+                    },
+                    motos:{
+                        nombre:"MOTOS",
+                        url:'img/productos/MOTOS/motos.jpg',
+                        productos:[
+                            {descripcion:"Moto 1",url:'img/productos/motos/motos/1.jpg'},
+                            {descripcion:"Moto 2",url:'img/productos/motos/motos/2.jpg'},
+                            {descripcion:"Moto 3",url:'img/productos/motos/motos/3.jpg'},
+                            {descripcion:"Moto 4",url:'img/productos/motos/motos/4.jpg'},
+                            {descripcion:"Moto 5",url:'img/productos/motos/motos/5.jpg'},
+                            {descripcion:"Moto 6",url:'img/productos/motos/motos/6.jpg'},
+                            {descripcion:"Moto 7",url:'img/productos/motos/motos/7.jpg'},
+                            {descripcion:"Moto 8",url:'img/productos/motos/motos/8.jpg'},
+                            {descripcion:"Moto 9",url:'img/productos/motos/motos/9.jpg'},
+                            {descripcion:"Moto 10",url:'img/productos/motos/motos/10.jpg'}
                         ]
                     }
                 },
@@ -147,21 +173,62 @@
             },
             otros:{
                 nombre:"OTROS",
-                conectorHDMI:{
-                        nombre:"CONECTORES HDMI",
-                        url:'img/productos/ESCALERAS/escalera_retractil.jpg',
+                tipos:{
+                    canaletas:{
+                            nombre:"Canaletas",
+                            url:'img/productos/OTROS/canaletas.jpg',
+                            productos:[
+                                {descripcion:"10MM x 10MM",url:'img/productos/otros/canaletas/10MM x 10MM.jpg'},
+                                {descripcion:"10MM x 15MM",url:'img/productos/otros/canaletas/10MM x 15MM.jpg'},
+                                {descripcion:"10MM x 20MM",url:'img/productos/otros/canaletas/10MM x 20MM.jpg'},
+                                {descripcion:"25MM x 25MM",url:'img/productos/otros/canaletas/25MM x 25MM.jpg'}
+                            ],
+                    },
+                    conectoresRJ45:{
+                        nombre:"Conectores RJ45",
+                        url:'img/productos/OTROS/conectoresRJ45.jpg',
                         productos:[
-                            {descripcion:"1M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"2M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"3M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"5M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"10M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"15M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"20M",url:'img/productos/about/moto-04.jpg'},
-                            {descripcion:"30M",url:'img/productos/about/moto-04.jpg'}
+                            {descripcion:"Conector RJ 45 PLÁSCTICO",url:'img/productos/otros/conectores/plastico.jpg'},
+                            {descripcion:"Conector RJ 45 BLINDADO",url:'img/productos/otros/conectores/blindado.jpg'}
                         ],
+                    },
+                    cerraduras:{
+                        nombre:"Cerradura 350KG ",
+                        url:'img/productos/OTROS/cerradura350kg.jpg',
+                        productos:[
+                            {descripcion:"Cerradura 350 kb",url:'img/productos/OTROS/cerradura350kg.jpg'},
+                            {descripcion:"Soporte ZL para Cerradura magnética",url:'img/productos/otros/cerradura/Soporte ZL para Cerradura magnética.jpg'},
+                            {descripcion:"Soporte U para Cerradura magnética",url:'img/productos/otros/cerradura/Soporte U para Cerradura magnética.jpg'}
+
+                        ],
+                    },
+                    baterias:{
+                        nombre:"Baterias",
+                        url:'img/productos/OTROS/bateria.jpg',
+                        productos:[
+                            {descripcion:"Bateria de 4A",url:'img/productos/otros/baterias/4a.jpg'},
+                            {descripcion:"Bateria de 7A",url:'img/productos/OTROS/bateria.jpg'}
+                        ],
+                    },
+                    fuenteCentralizada:{
+                        nombre:"Fuente Centralizada",
+                        url:'img/productos/OTROS/fuenteCentralizada.jpg',
+                        productos:[
+                            {descripcion:"Fuente Centralizada 5A 4 Canales GN",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 9A 9 Canales GN",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 9A 9 Canales OR",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 5A 4 Canales OR",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'}
+                        ],
+                    },
+                    transformador:{
+                        nombre:"Transformador 12 V",
+                        url:'img/productos/OTROS/transformador.jpg',
+                        productos:[
+                            {descripcion:"Transformador 12V GN",url:'img/productos/OTROS/transformador.jpg'}
+                        ],
+                    }
                 },
-                    estado:false,tipo:'impar'
+                        estado:false,tipo:'impar'
             }
         }
 
