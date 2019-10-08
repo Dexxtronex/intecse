@@ -12,7 +12,6 @@
   , venta de pistolas de juguete">
   <meta name="google" content="notranslate" />
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="vue.js"></script>
 
   <title>Intecse</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -30,6 +29,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
 
 </head>
 
@@ -115,34 +117,57 @@
   <section class="page-section">
     <div class="container">
 
-      <div class="row" id="botones">
-        <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
-          <h2 class="section-heading text-uppercase">Opciones</h2>
-        </div>
-        <div class="col-lg-12 text-center lista" v-for="boton of botones"  style="margin-bottom: 10px; " >
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" v-if="boton.tipo=='par'" @click="ocultar(boton.nombre)"
-            href="#contenedor">{{boton.nombre}}</a>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="background-color:rgb(95, 219, 247);"  @click="ocultar(boton.nombre)"
-            v-if="boton.tipo=='impar'" href="#contenedor">{{boton.nombre}}</a>
-        </div>
-    
-      <div class="container" v-for="boton of botones" v-if="boton.estado" id="hide">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase"> {{boton.nombre}}</h2>
-            <h3 class="section-subheading text-muted"> </h3>
-          </div>
-  
-        </div>
-        <div class="row" >
-          <div class="col-md-4 col-sm-6 portfolio-item" v-for="cont of contenido" v-if="boton.nombre === cont.tipo" id="contenedor">
-              <img class="img-fluid"  :src="cont.url" alt="cont.nombre">
-            <div class="portfolio-caption">
-              <h4>{{cont.descripcion}}</h4>
-              <!--<p class="text-muted">Illustration</p>-->
-            </div>
-          </div>
-      </div>
+      <div class="row" id="app">
+                          <!--          BOTONES DINAMICOS         -->
+                    <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
+                      <h2 class="section-heading text-uppercase">Opciones</h2>
+                    </div>
+                    <div class="col-lg-12 text-center lista" v-for="boton of objetoPrincipal.productos"  style="margin-bottom: 10px; " >
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" v-if="boton.tipo=='par'" 
+                        href="#contenedor" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="background-color:rgb(95, 219, 247);" 
+                        v-if="boton.tipo=='impar'" href="#contenedor" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
+                    </div>
+                          <!--        TIPO DE OPCIONES       -->
+                    <section class="page-section" v-if="objetoSeleccionado.estado">
+                      <div class="container">
+                          <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
+                              <h2 class="section-heading text-uppercase">Tipos de {{objetoSeleccionado.nombre}}</h2>
+                            </div>
+                      <div class="container"  v-if="objetoSeleccionado.estado" id="hide">
+                        <div class="row" >
+                            <div class="col-md-4 col-sm-6 portfolio-item" v-for="objeto of objetoSeleccionado.tipos"  id="contenedor">
+                                <img class="img-fluid"  :src="objeto.url" alt="objeto.nombre">
+                                      <div class="portfolio-caption">
+                                          <h2 class="section-heading text-uppercase" style="text-align: center">{{objeto.nombre}}</h2>
+                                        <a class="btn btn-dark btn-xl text-uppercase js-scroll-trigger btn-block"   
+                                        href="#contenedorProductos" @click="obtenerProducto(objeto)" >Ver Modelos</a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </section>
+                          <!--          TIPOS DE PRODUCTOS          -->
+                      <section class="page-section"  v-if="objetoProductos.estado">
+                          <div class="container">
+                              <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
+                                  <h2 class="section-heading text-uppercase">Tipos de Productos {{objetoSeleccionado.nombre}}</h2>
+                                </div>
+                      <div class="container"  v-if="objetoProductos.estado" id="hide">
+                          <div class="row" >
+                              <div class="col-md-4 col-sm-6 portfolio-item" v-for="objeto of objetoProductos"  id="contenedorProductos">
+                                        <div class="portfolio-caption">
+                                            <img class="img-fluid"  :src="objeto.url" alt="objeto.descripcion">
+                                            <h2 class="section-heading text-uppercase">{{objeto.nombre}}</h2>
+
+                                            <h3 class="section-heading text-uppercase" style="text-align: center">{{objeto.descripcion}}</h3>
+                                        </div>
+                                  </div>
+                              </div>
+                        </div>
+                      </div>
+                    </section>
   </section>
 
   <!--FIN DE OPCIONES-->
@@ -208,6 +233,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <script src="vue.js"></script>
+  <script src="lodash.js"></script>
 
 </body>
 
