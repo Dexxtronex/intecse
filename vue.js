@@ -77,26 +77,26 @@
                 tipos:{
                     hdmi:{
                         nombre:"HDMI",
-                        url:'img/productos/cables/HDMI/30m.jpg',
+                        url:'img/productos/CABLES/HDMI/30m.jpg',
                         productos:[
-                            {descripcion:"1M",url:'img/productos/cables/HDMI/1m.jpg'},
-                            {descripcion:"2M",url:'img/productos/cables/HDMI/2m.jpg'},
-                            {descripcion:"3M",url:'img/productos/cables/HDMI/3m.jpg'},
-                            {descripcion:"5M",url:'img/productos/cables/HDMI/5m.jpg'},
-                            {descripcion:"10M",url:'img/productos/cables/HDMI/10m.jpg'},
-                            {descripcion:"15M",url:'img/productos/cables/HDMI/15m.jpg'},
-                            {descripcion:"20M",url:'img/productos/cables/HDMI/20m.jpg'},
-                            {descripcion:"30M",url:'img/productos/cables/HDMI/30m.jpg'}
+                            {descripcion:"1M",url:'img/productos/CABLES/HDMI/1m.jpg'},
+                            {descripcion:"2M",url:'img/productos/CABLES/HDMI/2m.jpg'},
+                            {descripcion:"3M",url:'img/productos/CABLES/HDMI/3m.jpg'},
+                            {descripcion:"5M",url:'img/productos/CABLES/HDMI/5m.jpg'},
+                            {descripcion:"10M",url:'img/productos/CABLES/HDMI/10m.jpg'},
+                            {descripcion:"15M",url:'img/productos/CABLES/HDMI/15m.jpg'},
+                            {descripcion:"20M",url:'img/productos/CABLES/HDMI/20m.jpg'},
+                            {descripcion:"30M",url:'img/productos/CABLES/HDMI/30m.jpg'}
                         ]
                     },
                     utp:{
                         nombre:"UTP CAT5 - CAT6",
-                        url:'img/productos/cables/UTP/utp.jpg',
+                        url:'img/productos/CABLES/UTP/utp.jpg',
                         productos:[
-                            {descripcion:"CAT 5e INTERIOR",url:'img/productos/cables/UTP/cat-5e-exterior.jpg'},
-                            {descripcion:"CAT 6e INTERIOR",url:'img/productos/cables/UTP/cat-6e-exterior.jpg'},
-                            {descripcion:"CAT 5e 4.0MM EXTERIOR",url:'img/productos/cables/UTP/cat-5e-exterior.jpg'},
-                            {descripcion:"CAT 5e 5.0MM EXTERIOR",url:'img/productos/cables/UTP/cat-5e-exterior.jpg'}
+                            {descripcion:"CAT 5e INTERIOR",url:'img/productos/CABLES/UTP/cat-5e-exterior.jpg'},
+                            {descripcion:"CAT 6e INTERIOR",url:'img/productos/CABLES/UTP/cat-6e-exterior.jpg'},
+                            {descripcion:"CAT 5e 4.0MM EXTERIOR",url:'img/productos/CABLES/UTP/cat-5e-exterior.jpg'},
+                            {descripcion:"CAT 5e 5.0MM EXTERIOR",url:'img/productos/CABLES/UTP/cat-5e-exterior.jpg'}
                         ]
                     }
                 },
@@ -108,23 +108,23 @@
                 tipos:{
                     movil:{
                         nombre:"TV",
-                        url:'img/productos/soportes/soporte-vesa.jpg',
+                        url:'img/productos/SOPORTES/soporte-vesa.jpg',
                         productos:[
-                            {descripcion:"Soporte con ruedas",url:'img/productos/soportes/soporte-vesa.jpg'},
+                            {descripcion:"Soporte con ruedas",url:'img/productos/SOPORTES/soporte-vesa.jpg'},
                         ]
                     },
                     brazo:{
                         nombre:"TV",
-                        url:'img/productos/soportes/brazo.jpg',
+                        url:'img/productos/SOPORTES/brazo.jpg',
                         productos:[
-                            {descripcion:"Soporte con brazo",url:'img/productos/soportes/brazo.jpg'},
+                            {descripcion:"Soporte con brazo",url:'img/productos/SOPORTES/brazo.jpg'},
                         ]
                     },
                     estatico:{
                         nombre:"TV",
-                        url:'img/productos/soportes/estatico.jpg',
+                        url:'img/productos/SOPORTES/estatico.jpg',
                         productos:[
-                            {descripcion:"Soporte estatico",url:'img/productos/soportes/estatico.jpg'},
+                            {descripcion:"Soporte estatico",url:'img/productos/SOPORTES/estatico.jpg'},
                         ]
                     }
                 },
@@ -139,33 +139,33 @@
                         nombre:"MONOPATIN",
                         url:'img/productos/MOTOS/monopatin.jpg',
                         productos:[
-                            {descripcion:"Monopatin 1",url:'img/productos/motos/monopatin/1.jpg'},
-                            {descripcion:"Monopatin 2",url:'img/productos/motos/monopatin/2.jpg'}
+                            {descripcion:"Monopatin 1",url:'img/productos/MOTOS/monopatin/1.jpg'},
+                            {descripcion:"Monopatin 2",url:'img/productos/MOTOS/monopatin/2.jpg'}
                         ]
                     },
                     escuadron:{
                         nombre:"ESCUADRON",
                         url:'img/productos/MOTOS/escuadron.jpg',
                         productos:[
-                            {descripcion:"Escuadron 1",url:'img/productos/motos/escuadron/1.jpg'},
-                            {descripcion:"Escuadron 2",url:'img/productos/motos/escuadron/2.jpg'},
-                            {descripcion:"Escuadron 3",url:'img/productos/motos/escuadron/3.jpg'}
+                            {descripcion:"Escuadron 1",url:'img/productos/MOTOS/escuadron/1.jpg'},
+                            {descripcion:"Escuadron 2",url:'img/productos/MOTOS/escuadron/2.jpg'},
+                            {descripcion:"Escuadron 3",url:'img/productos/MOTOS/escuadron/3.jpg'}
                         ]
                     },
                     motos:{
                         nombre:"MOTOS",
                         url:'img/productos/MOTOS/motos.jpg',
                         productos:[
-                            {descripcion:"Moto 1",url:'img/productos/motos/motos/1.jpg'},
-                            {descripcion:"Moto 2",url:'img/productos/motos/motos/2.jpg'},
-                            {descripcion:"Moto 3",url:'img/productos/motos/motos/3.jpg'},
-                            {descripcion:"Moto 4",url:'img/productos/motos/motos/4.jpg'},
-                            {descripcion:"Moto 5",url:'img/productos/motos/motos/5.jpg'},
-                            {descripcion:"Moto 6",url:'img/productos/motos/motos/6.jpg'},
-                            {descripcion:"Moto 7",url:'img/productos/motos/motos/7.jpg'},
-                            {descripcion:"Moto 8",url:'img/productos/motos/motos/8.jpg'},
-                            {descripcion:"Moto 9",url:'img/productos/motos/motos/9.jpg'},
-                            {descripcion:"Moto 10",url:'img/productos/motos/motos/10.jpg'}
+                            {descripcion:"Moto 1",url:'img/productos/MOTOS/motos/1.jpg'},
+                            {descripcion:"Moto 2",url:'img/productos/MOTOS/motos/2.jpg'},
+                            {descripcion:"Moto 3",url:'img/productos/MOTOS/motos/3.jpg'},
+                            {descripcion:"Moto 4",url:'img/productos/MOTOS/motos/4.jpg'},
+                            {descripcion:"Moto 5",url:'img/productos/MOTOS/motos/5.jpg'},
+                            {descripcion:"Moto 6",url:'img/productos/MOTOS/motos/6.jpg'},
+                            {descripcion:"Moto 7",url:'img/productos/MOTOS/motos/7.jpg'},
+                            {descripcion:"Moto 8",url:'img/productos/MOTOS/motos/8.jpg'},
+                            {descripcion:"Moto 9",url:'img/productos/MOTOS/motos/9.jpg'},
+                            {descripcion:"Moto 10",url:'img/productos/MOTOS/motos/10.jpg'}
                         ]
                     }
                 },
@@ -178,18 +178,18 @@
                             nombre:"Canaletas",
                             url:'img/productos/OTROS/canaletas.jpg',
                             productos:[
-                                {descripcion:"10MM x 10MM",url:'img/productos/otros/canaletas/10MM x 10MM.jpg'},
-                                {descripcion:"10MM x 15MM",url:'img/productos/otros/canaletas/10MM x 15MM.jpg'},
-                                {descripcion:"10MM x 20MM",url:'img/productos/otros/canaletas/10MM x 20MM.jpg'},
-                                {descripcion:"25MM x 25MM",url:'img/productos/otros/canaletas/25MM x 25MM.jpg'}
+                                {descripcion:"10MM x 10MM",url:'img/productos/OTROS/canaletas/10MM x 10MM.jpg'},
+                                {descripcion:"10MM x 15MM",url:'img/productos/OTROS/canaletas/10MM x 15MM.jpg'},
+                                {descripcion:"10MM x 20MM",url:'img/productos/OTROS/canaletas/10MM x 20MM.jpg'},
+                                {descripcion:"25MM x 25MM",url:'img/productos/OTROS/canaletas/25MM x 25MM.jpg'}
                             ],
                     },
                     conectoresRJ45:{
                         nombre:"Conectores RJ45",
                         url:'img/productos/OTROS/conectoresRJ45.jpg',
                         productos:[
-                            {descripcion:"Conector RJ 45 PLÁSCTICO",url:'img/productos/otros/conectores/plastico.jpg'},
-                            {descripcion:"Conector RJ 45 BLINDADO",url:'img/productos/otros/conectores/blindado.jpg'}
+                            {descripcion:"Conector RJ 45 PLÁSCTICO",url:'img/productos/OTROS/conectores/plastico.jpg'},
+                            {descripcion:"Conector RJ 45 BLINDADO",url:'img/productos/OTROS/conectores/blindado.jpg'}
                         ],
                     },
                     cerraduras:{
@@ -197,8 +197,8 @@
                         url:'img/productos/OTROS/cerradura350kg.jpg',
                         productos:[
                             {descripcion:"Cerradura 350 kb",url:'img/productos/OTROS/cerradura350kg.jpg'},
-                            {descripcion:"Soporte ZL para Cerradura magnética",url:'img/productos/otros/cerradura/Soporte ZL para Cerradura magnética.jpg'},
-                            {descripcion:"Soporte U para Cerradura magnética",url:'img/productos/otros/cerradura/Soporte U para Cerradura magnética.jpg'}
+                            {descripcion:"Soporte ZL para Cerradura magnética",url:'img/productos/OTROS/cerradura/Soporte ZL para Cerradura magnética.jpg'},
+                            {descripcion:"Soporte U para Cerradura magnética",url:'img/productos/OTROS/cerradura/Soporte U para Cerradura magnética.jpg'}
 
                         ],
                     },
@@ -206,7 +206,7 @@
                         nombre:"Baterias",
                         url:'img/productos/OTROS/bateria.jpg',
                         productos:[
-                            {descripcion:"Bateria de 4A",url:'img/productos/otros/baterias/4a.jpg'},
+                            {descripcion:"Bateria de 4A",url:'img/productos/OTROS/baterias/4a.jpg'},
                             {descripcion:"Bateria de 7A",url:'img/productos/OTROS/bateria.jpg'}
                         ],
                     },
@@ -214,10 +214,10 @@
                         nombre:"Fuente Centralizada",
                         url:'img/productos/OTROS/fuenteCentralizada.jpg',
                         productos:[
-                            {descripcion:"Fuente Centralizada 5A 4 Canales GN",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'},
-                            {descripcion:"Fuente Centralizada 9A 9 Canales GN",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
-                            {descripcion:"Fuente Centralizada 9A 9 Canales OR",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
-                            {descripcion:"Fuente Centralizada 5A 4 Canales OR",url:'img/productos/otros/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'}
+                            {descripcion:"Fuente Centralizada 5A 4 Canales GN",url:'img/productos/OTROS/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 9A 9 Canales GN",url:'img/productos/OTROS/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 9A 9 Canales OR",url:'img/productos/OTROS/fuenteCentralizada/Fuente Centralizada 9A 9 Canales OR.jpg'},
+                            {descripcion:"Fuente Centralizada 5A 4 Canales OR",url:'img/productos/OTROS/fuenteCentralizada/Fuente Centralizada 5A 4 Canales OR.jpg'}
                         ],
                     },
                     transformador:{
