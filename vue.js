@@ -240,6 +240,7 @@
         this.objetoProductos.estado = false;
     },
     obtenerProducto(evento){
+        this.objetoSeleccionado = false;
         this.objetoProductos = _.clone(evento.productos);
         this.objetoProductos.estado = true;
     }
