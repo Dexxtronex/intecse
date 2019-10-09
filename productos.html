@@ -110,29 +110,45 @@
                     </div>
                     <div class="col-lg-12 text-center lista" v-for="boton of objetoPrincipal.productos"  style="margin-bottom: 10px; " >
                       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" v-if="boton.tipo=='par'" 
-                        href="#contenedor" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
+                        href="#contenedor1" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
                       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="background-color:rgb(95, 219, 247);" 
-                        v-if="boton.tipo=='impar'" href="#contenedor" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
+                        v-if="boton.tipo=='impar'" href="#contenedor1" @click="obtenerObjeto(boton)">{{boton.nombre}}</a>
                     </div>
                           <!--        TIPO DE OPCIONES       -->
+                          <div class="container"  id="hide">
+                            <div class="row" >
+                                <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 120px" id="contenedor1">
+                                  
+                                  </div>
+                            </div>
+                        </div>     
                       <div class="container" v-if="objetoSeleccionado.estado">
-                          <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
+                          <div class="col-lg-12 text-center lista" style="margin-bottom: 60px; ">
                               <h2 class="section-heading text-uppercase">Tipos de {{objetoSeleccionado.nombre}}</h2>
                             </div>
+                            
                       <div class="container"  v-if="objetoSeleccionado.estado" id="hide">
                         <div class="row" >
                             <div class="col-md-4 col-sm-6 portfolio-item" v-for="objeto of objetoSeleccionado.tipos"  id="contenedor">
-                                <img class="img-fluid"  :src="objeto.url" alt="objeto.nombre">
                                       <div class="portfolio-caption">
                                           <h2 class="section-heading text-uppercase" style="text-align: center">{{objeto.nombre}}</h2>
-                                        <a class="btn btn-dark btn-xl text-uppercase js-scroll-trigger btn-block"   
-                                        href="#contenedorProductos" @click="obtenerProducto(objeto)" >Ver Modelos</a>
+                                          <a href="#contenedorProductos" @click="obtenerProducto(objeto)">
+                                            <img class="img-fluid"  :src="objeto.url" alt="objeto.nombre">
+                                          </a> 
+                                          <a class="btn btn-dark btn-xl text-uppercase js-scroll-trigger btn-block"   
+                                        href="#contenedorProductos" @click="obtenerProducto(objeto)"  style="margin-bottom: 100px">Ver Modelos</a>
                                       </div>
                                 </div>
                             </div>
                         </div>
                         </div>
                           <!--          TIPOS DE PRODUCTOS          -->
+                          <div class="container" id="hide">
+                            <div class="row" >
+                                <div class="col-md-4 col-sm-6 portfolio-item" id="contenedorProductos">
+                                  </div>
+                            </div>
+                        </div>     
                           <div class="container" v-if="objetoProductos.estado">
                               <div class="col-lg-12 text-center lista" style="margin-bottom: 10px; ">
                                   <h2 class="section-heading text-uppercase">Tipos de Productos {{objetoSeleccionado.nombre}}</h2>
@@ -144,7 +160,7 @@
                                             <img class="img-fluid"  :src="objeto.url" alt="objeto.descripcion">
                                             <h2 class="section-heading text-uppercase">{{objeto.nombre}}</h2>
 
-                                            <h3 class="section-heading text-uppercase" style="text-align: center">{{objeto.descripcion}}</h3>
+                                            <h3 class="section-heading text-uppercase" style="text-align: center; margin-bottom: 60px;">{{objeto.descripcion}}</h3>
                                         </div>
                                   </div>
                               </div>
